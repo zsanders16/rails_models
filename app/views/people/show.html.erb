@@ -1,0 +1,72 @@
+<div class="container">
+    
+
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">    
+            <h3>Name: </h3>
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3><%= @person.name %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">
+            <h3>Age: </h3> 
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3><%= @person.age %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">
+            <h3>Hair Color: </h3>
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3><%= @person.hair_color %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">
+            <h3>Eye Color: </h3>
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3><%= @person.eye_color %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">
+            <h3>Gender: </h3>
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3><%= @person.gender %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 col-offset-3">
+            <h3>Alive: </h3>
+        </div>
+        <div class="col-sm-3 col-offset-5">
+            <h3> <%= @person.alive %></h3>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="btn btn-primary">
+    <%= link_to 'Go Back to Main List', people_path, class: 'text-danger' %>
+</div>
+<div class="btn btn-primary">
+    <%= link_to 'Edit', edit_person_path(@person), class: 'text-danger' %>
+</div> 
+<div class="btn btn-primary">
+    <%= link_to 'Delete', person_path(@person), method: :delete, class: 'text-danger' %>
+</div>
+
+

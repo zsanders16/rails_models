@@ -1,0 +1,25 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.main {
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+.to-new {
+    margin: 0 0 5px 80px;
+}
+
+.input-form {
+    margin: 0 0 10px 60px;
+}
+
+.back {
+    margin: 0 0 10px 140px;
+}
+
+.view {
+    margin: 0 0 20px 30px;
+}

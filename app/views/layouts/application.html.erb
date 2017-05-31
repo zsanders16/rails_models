@@ -9,6 +9,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="main bg-success z-depth-5">
+      <%= yield %>
+    </div>
   </body>
 </html>

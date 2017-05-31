@@ -1,0 +1,18 @@
+<h3 class="text-center"><u>List of all People</u></h3>
+
+<% if @people.empty? %>
+    <h5>There are no people to display</h5>
+<% else %>
+    <ol>
+        <% @people.each do |person| %>
+        <li>
+            <%= link_to person.name, person_path(person) %>
+        </li>
+        <% end %>
+    </ol>
+<% end %>
+
+<div class="to-new btn btn-primary">
+    <%= link_to 'Create New Person', new_person_path, class: "text-danger"  %>
+</div>
+
